@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace TP_Project1
 {
-    public partial class frmMain : Form
+    public partial class frmMain : MetroForm
     {
         public frmMain()
         {
