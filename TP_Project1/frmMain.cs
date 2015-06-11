@@ -27,6 +27,19 @@ namespace TP_Project1
             lvDaftarCicilan.Columns.Add("24 Bulan", 110);
             lvDaftarCicilan.Columns.Add("36 Bulan", 110);
             lvDaftarCicilan.Columns.Add("48 Bulan", 110);
+            cmbMerk.DataSource = ExcelHandler.GetListMerkMotor();
+        }
+
+        private void cmbMerk_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbJenis.DataSource = ExcelHandler.GetListMotor((string)cmbMerk.SelectedItem);
+        }
+
+        private void cmbJenis_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Motor motor = Motor.GetDataMotor(cmbMerk.Text);
+            lblHargaCash.Text = motor.HargaTunai.ToString();
+            
         }
     }
 }

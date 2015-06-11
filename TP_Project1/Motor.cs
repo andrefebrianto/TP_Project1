@@ -10,28 +10,31 @@ namespace TP_Project1
     {
         public string Merk { get; set; }
         public double HargaTunai { get; set; }
-        public double Cicilan { get; set; }
-        public double DownPayment { get; set; }
+        public double HargaKredit { get; set; }
         public Motor()
         {
 
         }
         public Motor(string merk, double tunai) :
-            this(merk,tunai,0,0){}
-        public Motor(string merk, double tunai, double cicilan, double dp)
+            this(merk,tunai,0){}
+        public Motor(string merk, double tunai, double kredit)
         {
             Merk = merk;
             HargaTunai = tunai;
-            Cicilan = cicilan;
-            DownPayment = dp;
+            HargaKredit = kredit;
+            
         }
-        public static Motor GetDataMotor()
+        public static Motor GetDataMotor(string jenis)
         {
-            return null;
+            return ExcelHandler.GetDataMotor(jenis);
         }
-        public double HargaTotalCicilan()
+        public double DP()
         {
-            return 0;
+            return 10*HargaKredit / 100;
+        }
+        public double cicilan(double dp, double bulan)
+        {
+            return (HargaKredit - dp) / bulan;
         }
     }
 }

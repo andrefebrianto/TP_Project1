@@ -35,8 +35,8 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.cmbJenis = new MetroFramework.Controls.MetroComboBox();
+            this.cmbMerk = new MetroFramework.Controls.MetroComboBox();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -60,8 +60,8 @@
             this.metroTabPage1.Controls.Add(this.metroLabel3);
             this.metroTabPage1.Controls.Add(this.metroLabel2);
             this.metroTabPage1.Controls.Add(this.metroLabel1);
-            this.metroTabPage1.Controls.Add(this.metroComboBox2);
-            this.metroTabPage1.Controls.Add(this.metroComboBox1);
+            this.metroTabPage1.Controls.Add(this.cmbJenis);
+            this.metroTabPage1.Controls.Add(this.cmbMerk);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
@@ -118,25 +118,27 @@
             this.metroLabel1.TabIndex = 4;
             this.metroLabel1.Text = "Merk";
             // 
-            // metroComboBox2
+            // cmbJenis
             // 
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Location = new System.Drawing.Point(126, 54);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(130, 29);
-            this.metroComboBox2.TabIndex = 3;
-            this.metroComboBox2.UseSelectable = true;
+            this.cmbJenis.FormattingEnabled = true;
+            this.cmbJenis.ItemHeight = 23;
+            this.cmbJenis.Location = new System.Drawing.Point(126, 54);
+            this.cmbJenis.Name = "cmbJenis";
+            this.cmbJenis.Size = new System.Drawing.Size(130, 29);
+            this.cmbJenis.TabIndex = 3;
+            this.cmbJenis.UseSelectable = true;
+            this.cmbJenis.SelectedIndexChanged += new System.EventHandler(this.cmbJenis_SelectedIndexChanged);
             // 
-            // metroComboBox1
+            // cmbMerk
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(126, 19);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(130, 29);
-            this.metroComboBox1.TabIndex = 2;
-            this.metroComboBox1.UseSelectable = true;
+            this.cmbMerk.FormattingEnabled = true;
+            this.cmbMerk.ItemHeight = 23;
+            this.cmbMerk.Location = new System.Drawing.Point(126, 19);
+            this.cmbMerk.Name = "cmbMerk";
+            this.cmbMerk.Size = new System.Drawing.Size(130, 29);
+            this.cmbMerk.TabIndex = 2;
+            this.cmbMerk.UseSelectable = true;
+            this.cmbMerk.SelectedIndexChanged += new System.EventHandler(this.cmbMerk_SelectedIndexChanged);
             // 
             // metroTabPage2
             // 
@@ -177,8 +179,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox cmbJenis;
+        private MetroFramework.Controls.MetroComboBox cmbMerk;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
     }
 }
