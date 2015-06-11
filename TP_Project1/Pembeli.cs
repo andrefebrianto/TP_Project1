@@ -16,7 +16,7 @@ namespace TP_Project1
         {
 
         }
-        public static Pembeli GetDataPembeli(string name)
+        public static Pembeli GetDataPembeli(string nama)
         {
             return null;
         }
