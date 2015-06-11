@@ -13,9 +13,11 @@ namespace TP_Project1
 {
     public partial class frmMain : MetroForm
     {
+        private Pembeli buyer;
         public frmMain()
         {
             InitializeComponent();
         }
+        
     }
 }
