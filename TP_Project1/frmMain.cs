@@ -18,6 +18,15 @@ namespace TP_Project1
         {
             InitializeComponent();
         }
-        
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lvDaftarCicilan.View = View.Details;
+            lvDaftarCicilan.Columns.Add("Down Payment",110);
+            lvDaftarCicilan.Columns.Add("12 Bulan", 110);
+            lvDaftarCicilan.Columns.Add("24 Bulan", 110);
+            lvDaftarCicilan.Columns.Add("36 Bulan", 110);
+            lvDaftarCicilan.Columns.Add("48 Bulan", 110);
+        }
     }
 }

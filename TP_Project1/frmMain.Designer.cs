@@ -30,14 +30,14 @@
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.lvDaftarCicilan = new System.Windows.Forms.ListView();
             this.lblHargaCash = new MetroFramework.Controls.MetroLabel();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             // 
             // metroTabPage1
             // 
-            this.metroTabPage1.Controls.Add(this.listView1);
+            this.metroTabPage1.Controls.Add(this.lvDaftarCicilan);
             this.metroTabPage1.Controls.Add(this.lblHargaCash);
             this.metroTabPage1.Controls.Add(this.metroLabel3);
             this.metroTabPage1.Controls.Add(this.metroLabel2);
@@ -74,29 +74,49 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
-            // metroTabPage2
+            // lvDaftarCicilan
             // 
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(556, 314);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "Daftar Pembeli";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 10;
+            this.lvDaftarCicilan.Location = new System.Drawing.Point(3, 132);
+            this.lvDaftarCicilan.Name = "lvDaftarCicilan";
+            this.lvDaftarCicilan.Size = new System.Drawing.Size(550, 186);
+            this.lvDaftarCicilan.TabIndex = 8;
+            this.lvDaftarCicilan.UseCompatibleStateImageBehavior = false;
             // 
-            // metroComboBox1
+            // lblHargaCash
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(126, 19);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(130, 29);
-            this.metroComboBox1.TabIndex = 2;
-            this.metroComboBox1.UseSelectable = true;
+            this.lblHargaCash.AutoSize = true;
+            this.lblHargaCash.Location = new System.Drawing.Point(126, 99);
+            this.lblHargaCash.Name = "lblHargaCash";
+            this.lblHargaCash.Size = new System.Drawing.Size(83, 19);
+            this.lblHargaCash.TabIndex = 7;
+            this.lblHargaCash.Text = "metroLabel4";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(3, 99);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(78, 19);
+            this.metroLabel3.TabIndex = 6;
+            this.metroLabel3.Text = "Harga Tunai";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(3, 64);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(36, 19);
+            this.metroLabel2.TabIndex = 5;
+            this.metroLabel2.Text = "Jenis";
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(3, 29);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(39, 19);
+            this.metroLabel1.TabIndex = 4;
+            this.metroLabel1.Text = "Merk";
             // 
             // metroComboBox2
             // 
@@ -108,49 +128,29 @@
             this.metroComboBox2.TabIndex = 3;
             this.metroComboBox2.UseSelectable = true;
             // 
-            // metroLabel1
+            // metroComboBox1
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 29);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(39, 19);
-            this.metroLabel1.TabIndex = 4;
-            this.metroLabel1.Text = "Merk";
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Location = new System.Drawing.Point(126, 19);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.Size = new System.Drawing.Size(130, 29);
+            this.metroComboBox1.TabIndex = 2;
+            this.metroComboBox1.UseSelectable = true;
             // 
-            // metroLabel2
+            // metroTabPage2
             // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(3, 64);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(36, 19);
-            this.metroLabel2.TabIndex = 5;
-            this.metroLabel2.Text = "Jenis";
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(3, 99);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(78, 19);
-            this.metroLabel3.TabIndex = 6;
-            this.metroLabel3.Text = "Harga Tunai";
-            // 
-            // lblHargaCash
-            // 
-            this.lblHargaCash.AutoSize = true;
-            this.lblHargaCash.Location = new System.Drawing.Point(126, 99);
-            this.lblHargaCash.Name = "lblHargaCash";
-            this.lblHargaCash.Size = new System.Drawing.Size(83, 19);
-            this.lblHargaCash.TabIndex = 7;
-            this.lblHargaCash.Text = "metroLabel4";
-            // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(3, 132);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(550, 186);
-            this.listView1.TabIndex = 8;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 10;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(556, 334);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "Daftar Pembeli";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 10;
             // 
             // frmMain
             // 
@@ -160,6 +160,7 @@
             this.Controls.Add(this.metroTabControl1);
             this.Name = "frmMain";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
@@ -171,7 +172,7 @@
 
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvDaftarCicilan;
         private MetroFramework.Controls.MetroLabel lblHargaCash;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel2;
