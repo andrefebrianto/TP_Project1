@@ -8,7 +8,10 @@ namespace TP_Project1
 {
     class Motor
     {
+        public string id { get; set; }
         public string Merk { get; set; }
+        public string Jenis { get; set; }
+        public string Model { get; set; }
         public double HargaTunai { get; set; }
         public double HargaKredit { get; set; }
         public Motor()
