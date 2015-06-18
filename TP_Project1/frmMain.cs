@@ -41,5 +41,17 @@ namespace TP_Project1
             lblHargaCash.Text = motor.HargaTunai.ToString();
             
         }
+
+        private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            pnlNama.Visible = true;
+            pnlTanggal.Visible = false;
+        }
+
+        private void metroRadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            pnlTanggal.Visible = true;
+            pnlNama.Visible = false;
+        }
     }
 }
